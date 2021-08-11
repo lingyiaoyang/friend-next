@@ -12,6 +12,7 @@ on:
 jobs:
   build:
     runs-on: self-hosted
+    # will create the self-hosted name on runner server side
 
     strategy:
       matrix:
@@ -24,6 +25,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-
+          cache: 'npm'
       - run: yarn install
       - run: yarn build
+      - run: yarn start
