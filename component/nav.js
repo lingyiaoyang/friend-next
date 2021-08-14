@@ -25,7 +25,7 @@ const Example = (props) => {
       <Navbar color='light' light expand='md'>
         <NavbarBrand>
           <Link href='/'>
-            <h3>Adopt Friend</h3>
+            <h3>Adopt Friendddd</h3>
           </Link>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
